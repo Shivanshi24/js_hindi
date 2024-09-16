@@ -15,7 +15,7 @@ const id = Symbol('123')
 const anotherId =Symbol('123')
 
 
-console.log(id === anotherId)
+// console.log(id === anotherId)
 
 //const bigNumber = 34536313918372889n
 
@@ -41,10 +41,10 @@ const myFunction = function(){
     console.log("hello world")
 }
 
-console.log(typeof bigNumber)
-console.log(typeof outsideTemp)
-console.log(typeof myFunction)
-console.log(typeof myObj)
+// console.log(typeof bigNumber)
+// console.log(typeof outsideTemp)
+// console.log(typeof myFunction)
+// console.log(typeof myObj)
 
 // Return type of variables in JavaScript
 // 1) Primitive Datatypes
@@ -56,7 +56,33 @@ console.log(typeof myObj)
 //        Symbol  =>  symbol
 //        BigInt  =>  bigint
 
+
 // 2) Non-primitive Datatypes
 //        Arrays  =>  object
 //        Function  =>  function
 //        Object  =>  object
+
+
+//************************************Memory*************************** */
+// Stack (primtive data type)
+//Heap(non-primitive data type)
+
+let myYoutubeName = "hiteshmishradotcom"
+let anotherName = myYoutubeName
+
+ anotherName = "chaiaurcode"
+
+console.log(myYoutubeName)
+console.log(anotherName)
+
+let userOne = {
+    usermMail : "anuj23@gmail.com",
+    upiId :"user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.usermMail = "hitesh@gmail.com"
+
+console.log(userOne.usermMail)
+console.log(userTwo.usermMail)
